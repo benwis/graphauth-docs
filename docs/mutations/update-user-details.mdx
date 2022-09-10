@@ -1,0 +1,52 @@
+---
+id: update-user-details
+title: updateUserDetails
+hide_table_of_contents: true
+pagination_next: null
+pagination_prev: null
+---
+
+
+
+export const Bullet = () => <><span style={{ fontWeight: 'normal', fontSize: '.5em', color: 'var(--ifm-color-secondary-darkest)' }}>&nbsp;●&nbsp;</span></>
+
+export const SpecifiedBy = (props) => <>Specification<a className="link" style={{ fontSize:'1.5em', paddingLeft:'4px' }} target="_blank" href={props.url} title={'Specified by ' + props.url}>⎘</a></>
+
+export const Badge = (props) => <><span class={'badge badge--' + props.class}>{props.text}</span></>
+
+
+Update user_details row for a user. Must be a platform admin or the current user.
+
+```graphql
+updateUserDetails(
+  tenantName: String!
+  id: UUID!
+  newUserDetails: UserDetailsInput!
+): Boolean!
+```
+
+
+### Arguments
+
+#### [<code style={{ fontWeight: 'normal' }}>updateUserDetails.<b>tenantName</b></code>](#)<Bullet />[`String!`](/scalars/string) <Badge class="secondary" text="non-null"/> <Badge class="secondary" text="scalar"/>
+> 
+> 
+
+#### [<code style={{ fontWeight: 'normal' }}>updateUserDetails.<b>id</b></code>](#)<Bullet />[`UUID!`](/scalars/uuid) <Badge class="secondary" text="non-null"/> <Badge class="secondary" text="scalar"/>
+> 
+> 
+
+#### [<code style={{ fontWeight: 'normal' }}>updateUserDetails.<b>newUserDetails</b></code>](#)<Bullet />[`UserDetailsInput!`](/inputs/user-details-input) <Badge class="secondary" text="non-null"/> <Badge class="secondary" text="input"/>
+> 
+> 
+
+### Type
+
+#### [`Boolean`](/scalars/boolean) <Badge class="secondary" text="scalar"/>
+> The `Boolean` scalar type represents `true` or `false`.
+> 
+
+
+
+
+

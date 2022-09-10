@@ -1,0 +1,42 @@
+---
+id: oem-record
+title: oemRecord
+hide_table_of_contents: true
+pagination_next: null
+pagination_prev: null
+---
+
+
+
+export const Bullet = () => <><span style={{ fontWeight: 'normal', fontSize: '.5em', color: 'var(--ifm-color-secondary-darkest)' }}>&nbsp;●&nbsp;</span></>
+
+export const SpecifiedBy = (props) => <>Specification<a className="link" style={{ fontSize:'1.5em', paddingLeft:'4px' }} target="_blank" href={props.url} title={'Specified by ' + props.url}>⎘</a></>
+
+export const Badge = (props) => <><span class={'badge badge--' + props.class}>{props.text}</span></>
+
+
+Get a specific OEM record from airtable
+
+```graphql
+oemRecord(
+  id: String!
+): OemRow!
+```
+
+
+### Arguments
+
+#### [<code style={{ fontWeight: 'normal' }}>oemRecord.<b>id</b></code>](#)<Bullet />[`String!`](/scalars/string) <Badge class="secondary" text="non-null"/> <Badge class="secondary" text="scalar"/>
+> 
+> 
+
+### Type
+
+#### [`OemRow`](/objects/oem-row) <Badge class="secondary" text="object"/>
+> 
+> 
+
+
+
+
+

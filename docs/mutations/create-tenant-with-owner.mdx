@@ -1,0 +1,57 @@
+---
+id: create-tenant-with-owner
+title: createTenantWithOwner
+hide_table_of_contents: true
+pagination_next: null
+pagination_prev: null
+---
+
+
+
+export const Bullet = () => <><span style={{ fontWeight: 'normal', fontSize: '.5em', color: 'var(--ifm-color-secondary-darkest)' }}>&nbsp;●&nbsp;</span></>
+
+export const SpecifiedBy = (props) => <>Specification<a className="link" style={{ fontSize:'1.5em', paddingLeft:'4px' }} target="_blank" href={props.url} title={'Specified by ' + props.url}>⎘</a></>
+
+export const Badge = (props) => <><span class={'badge badge--' + props.class}>{props.text}</span></>
+
+
+Create a tenant with a user owner. A shortcut, may be modified to allow multiple admins.
+
+```graphql
+createTenantWithOwner(
+  tenantName: String!
+  ownerId: UUID!
+  displayName: String!
+  bucketName: String
+): Tenant!
+```
+
+
+### Arguments
+
+#### [<code style={{ fontWeight: 'normal' }}>createTenantWithOwner.<b>tenantName</b></code>](#)<Bullet />[`String!`](/scalars/string) <Badge class="secondary" text="non-null"/> <Badge class="secondary" text="scalar"/>
+> 
+> 
+
+#### [<code style={{ fontWeight: 'normal' }}>createTenantWithOwner.<b>ownerId</b></code>](#)<Bullet />[`UUID!`](/scalars/uuid) <Badge class="secondary" text="non-null"/> <Badge class="secondary" text="scalar"/>
+> 
+> 
+
+#### [<code style={{ fontWeight: 'normal' }}>createTenantWithOwner.<b>displayName</b></code>](#)<Bullet />[`String!`](/scalars/string) <Badge class="secondary" text="non-null"/> <Badge class="secondary" text="scalar"/>
+> 
+> 
+
+#### [<code style={{ fontWeight: 'normal' }}>createTenantWithOwner.<b>bucketName</b></code>](#)<Bullet />[`String`](/scalars/string) <Badge class="secondary" text="scalar"/>
+> 
+> 
+
+### Type
+
+#### [`Tenant`](/objects/tenant) <Badge class="secondary" text="object"/>
+> 
+> 
+
+
+
+
+

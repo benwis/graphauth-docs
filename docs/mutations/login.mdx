@@ -1,0 +1,67 @@
+---
+id: login
+title: login
+hide_table_of_contents: true
+pagination_next: null
+pagination_prev: null
+---
+
+
+
+export const Bullet = () => <><span style={{ fontWeight: 'normal', fontSize: '.5em', color: 'var(--ifm-color-secondary-darkest)' }}>&nbsp;●&nbsp;</span></>
+
+export const SpecifiedBy = (props) => <>Specification<a className="link" style={{ fontSize:'1.5em', paddingLeft:'4px' }} target="_blank" href={props.url} title={'Specified by ' + props.url}>⎘</a></>
+
+export const Badge = (props) => <><span class={'badge badge--' + props.class}>{props.text}</span></>
+
+
+Logs in user based on username or email, and password
+Generates new access and refresh tokens for the user.
+This can use take a password, or a magic link token if that feature is enabled.
+One of the two must be provided.
+If user approval is required, and the user is not approved, login will throw an error.
+If you'd like to login with webauthn, see the webauthn login mutation.
+
+```graphql
+login(
+  name: String
+  email: String
+  tenantName: String!
+  password: String
+  magicToken: String
+): LoginPayload!
+```
+
+
+### Arguments
+
+#### [<code style={{ fontWeight: 'normal' }}>login.<b>name</b></code>](#)<Bullet />[`String`](/scalars/string) <Badge class="secondary" text="scalar"/>
+> User name
+> 
+
+#### [<code style={{ fontWeight: 'normal' }}>login.<b>email</b></code>](#)<Bullet />[`String`](/scalars/string) <Badge class="secondary" text="scalar"/>
+> 
+> 
+
+#### [<code style={{ fontWeight: 'normal' }}>login.<b>tenantName</b></code>](#)<Bullet />[`String!`](/scalars/string) <Badge class="secondary" text="non-null"/> <Badge class="secondary" text="scalar"/>
+> 
+> 
+
+#### [<code style={{ fontWeight: 'normal' }}>login.<b>password</b></code>](#)<Bullet />[`String`](/scalars/string) <Badge class="secondary" text="scalar"/>
+> 
+> 
+
+#### [<code style={{ fontWeight: 'normal' }}>login.<b>magicToken</b></code>](#)<Bullet />[`String`](/scalars/string) <Badge class="secondary" text="scalar"/>
+> 
+> 
+
+### Type
+
+#### [`LoginPayload`](/objects/login-payload) <Badge class="secondary" text="object"/>
+> 
+> 
+
+
+
+
+

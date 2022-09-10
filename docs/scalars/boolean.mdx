@@ -1,0 +1,36 @@
+---
+id: boolean
+title: Boolean
+hide_table_of_contents: true
+pagination_next: null
+pagination_prev: null
+---
+
+
+
+export const Bullet = () => <><span style={{ fontWeight: 'normal', fontSize: '.5em', color: 'var(--ifm-color-secondary-darkest)' }}>&nbsp;●&nbsp;</span></>
+
+export const SpecifiedBy = (props) => <>Specification<a className="link" style={{ fontSize:'1.5em', paddingLeft:'4px' }} target="_blank" href={props.url} title={'Specified by ' + props.url}>⎘</a></>
+
+export const Badge = (props) => <><span class={'badge badge--' + props.class}>{props.text}</span></>
+
+
+The `Boolean` scalar type represents `true` or `false`.
+
+```graphql
+scalar Boolean
+```
+
+
+
+
+### Returned by
+
+[`approveUser`](/mutations/approve-user)  <Badge class="secondary" text="mutation"/><Bullet />[`changePassword`](/mutations/change-password)  <Badge class="secondary" text="mutation"/><Bullet />[`createResource`](/mutations/create-resource)  <Badge class="secondary" text="mutation"/><Bullet />[`createWebauthnOption`](/mutations/create-webauthn-option)  <Badge class="secondary" text="mutation"/><Bullet />[`deleteAddress`](/mutations/delete-address)  <Badge class="secondary" text="mutation"/><Bullet />[`deleteEmailSetting`](/mutations/delete-email-setting)  <Badge class="secondary" text="mutation"/><Bullet />[`deleteResource`](/mutations/delete-resource)  <Badge class="secondary" text="mutation"/><Bullet />[`deleteTenant`](/mutations/delete-tenant)  <Badge class="secondary" text="mutation"/><Bullet />[`deleteTenantFeature`](/mutations/delete-tenant-feature)  <Badge class="secondary" text="mutation"/><Bullet />[`deleteUser`](/mutations/delete-user)  <Badge class="secondary" text="mutation"/><Bullet />[`deleteUserDetails`](/mutations/delete-user-details)  <Badge class="secondary" text="mutation"/><Bullet />[`deleteWebauthnOption`](/mutations/delete-webauthn-option)  <Badge class="secondary" text="mutation"/><Bullet />[`generatePasswordReset`](/mutations/generate-password-reset)  <Badge class="secondary" text="mutation"/><Bullet />[`inviteUser`](/mutations/invite-user)  <Badge class="secondary" text="mutation"/><Bullet />[`logout`](/mutations/logout)  <Badge class="secondary" text="mutation"/><Bullet />[`logoutAll`](/mutations/logout-all)  <Badge class="secondary" text="mutation"/><Bullet />[`registerWebauthnKeyForUser`](/mutations/register-webauthn-key-for-user)  <Badge class="secondary" text="mutation"/><Bullet />[`resetPassword`](/mutations/reset-password)  <Badge class="secondary" text="mutation"/><Bullet />[`sendMagicLink`](/mutations/send-magic-link)  <Badge class="secondary" text="mutation"/><Bullet />[`updateAddress`](/mutations/update-address)  <Badge class="secondary" text="mutation"/><Bullet />[`updateEmailSetting`](/mutations/update-email-setting)  <Badge class="secondary" text="mutation"/><Bullet />[`updateOemRecord`](/mutations/update-oem-record)  <Badge class="secondary" text="mutation"/><Bullet />[`updateTenant`](/mutations/update-tenant)  <Badge class="secondary" text="mutation"/><Bullet />[`updateTenantFeature`](/mutations/update-tenant-feature)  <Badge class="secondary" text="mutation"/><Bullet />[`updateUser`](/mutations/update-user)  <Badge class="secondary" text="mutation"/><Bullet />[`updateUserDetails`](/mutations/update-user-details)  <Badge class="secondary" text="mutation"/><Bullet />[`updateWebauthnOption`](/mutations/update-webauthn-option)  <Badge class="secondary" text="mutation"/><Bullet />[`uploadResource`](/mutations/upload-resource)  <Badge class="secondary" text="mutation"/>
+
+### Member of
+
+[`Address`](/objects/address)  <Badge class="secondary" text="object"/><Bullet />[`AddressInput`](/inputs/address-input)  <Badge class="secondary" text="input"/><Bullet />[`approveUser`](/mutations/approve-user)  <Badge class="secondary" text="mutation"/><Bullet />[`createAddress`](/mutations/create-address)  <Badge class="secondary" text="mutation"/><Bullet />[`createUserFromInvite`](/mutations/create-user-from-invite)  <Badge class="secondary" text="mutation"/><Bullet />[`include`](/directives/include)  <Badge class="secondary" text="directive"/><Bullet />[`Resource`](/objects/resource)  <Badge class="secondary" text="object"/><Bullet />[`skip`](/directives/skip)  <Badge class="secondary" text="directive"/><Bullet />[`Tenant`](/objects/tenant)  <Badge class="secondary" text="object"/><Bullet />[`TenantFeature`](/objects/tenant-feature)  <Badge class="secondary" text="object"/><Bullet />[`TenantFeaturesInput`](/inputs/tenant-features-input)  <Badge class="secondary" text="input"/><Bullet />[`TenantInput`](/inputs/tenant-input)  <Badge class="secondary" text="input"/><Bullet />[`updateUser`](/mutations/update-user)  <Badge class="secondary" text="mutation"/><Bullet />[`User`](/objects/user)  <Badge class="secondary" text="object"/><Bullet />[`UserWithEnumeratedDetails`](/objects/user-with-enumerated-details)  <Badge class="secondary" text="object"/>
+
+
+

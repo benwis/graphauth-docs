@@ -1,0 +1,43 @@
+---
+id: email-setting
+title: emailSetting
+hide_table_of_contents: true
+pagination_next: null
+pagination_prev: null
+---
+
+
+
+export const Bullet = () => <><span style={{ fontWeight: 'normal', fontSize: '.5em', color: 'var(--ifm-color-secondary-darkest)' }}>&nbsp;●&nbsp;</span></>
+
+export const SpecifiedBy = (props) => <>Specification<a className="link" style={{ fontSize:'1.5em', paddingLeft:'4px' }} target="_blank" href={props.url} title={'Specified by ' + props.url}>⎘</a></>
+
+export const Badge = (props) => <><span class={'badge badge--' + props.class}>{props.text}</span></>
+
+
+Gets email_settings for a certain tenant. Configures Postmark templates to use at different
+stages of the user flow like signup, user approval, forgot password, etc.
+
+```graphql
+emailSetting(
+  tenantName: String!
+): EmailSetting
+```
+
+
+### Arguments
+
+#### [<code style={{ fontWeight: 'normal' }}>emailSetting.<b>tenantName</b></code>](#)<Bullet />[`String!`](/scalars/string) <Badge class="secondary" text="non-null"/> <Badge class="secondary" text="scalar"/>
+> 
+> 
+
+### Type
+
+#### [`EmailSetting`](/objects/email-setting) <Badge class="secondary" text="object"/>
+> 
+> 
+
+
+
+
+

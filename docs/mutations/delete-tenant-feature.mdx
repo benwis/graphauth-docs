@@ -1,0 +1,43 @@
+---
+id: delete-tenant-feature
+title: deleteTenantFeature
+hide_table_of_contents: true
+pagination_next: null
+pagination_prev: null
+---
+
+
+
+export const Bullet = () => <><span style={{ fontWeight: 'normal', fontSize: '.5em', color: 'var(--ifm-color-secondary-darkest)' }}>&nbsp;●&nbsp;</span></>
+
+export const SpecifiedBy = (props) => <>Specification<a className="link" style={{ fontSize:'1.5em', paddingLeft:'4px' }} target="_blank" href={props.url} title={'Specified by ' + props.url}>⎘</a></>
+
+export const Badge = (props) => <><span class={'badge badge--' + props.class}>{props.text}</span></>
+
+
+Delete all features a tenant has. Not recommended unless the tenant is being deleted as well. Limited
+to platform admins and the UI only.
+
+```graphql
+deleteTenantFeature(
+  tenantName: String!
+): Boolean!
+```
+
+
+### Arguments
+
+#### [<code style={{ fontWeight: 'normal' }}>deleteTenantFeature.<b>tenantName</b></code>](#)<Bullet />[`String!`](/scalars/string) <Badge class="secondary" text="non-null"/> <Badge class="secondary" text="scalar"/>
+> 
+> 
+
+### Type
+
+#### [`Boolean`](/scalars/boolean) <Badge class="secondary" text="scalar"/>
+> The `Boolean` scalar type represents `true` or `false`.
+> 
+
+
+
+
+

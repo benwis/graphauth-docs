@@ -1,0 +1,59 @@
+---
+id: user-with-details
+title: userWithDetails
+hide_table_of_contents: true
+pagination_next: null
+pagination_prev: null
+---
+
+
+
+export const Bullet = () => <><span style={{ fontWeight: 'normal', fontSize: '.5em', color: 'var(--ifm-color-secondary-darkest)' }}>&nbsp;●&nbsp;</span></>
+
+export const SpecifiedBy = (props) => <>Specification<a className="link" style={{ fontSize:'1.5em', paddingLeft:'4px' }} target="_blank" href={props.url} title={'Specified by ' + props.url}>⎘</a></>
+
+export const Badge = (props) => <><span class={'badge badge--' + props.class}>{props.text}</span></>
+
+
+Query to return user information from both the user table and the user_details table.
+Requires user to query for the same user, or to have sufficient permissions in the same
+tenant.
+
+```graphql
+userWithDetails(
+  tenantName: String!
+  id: UUID
+  name: String
+  email: String
+): UserWithDetails
+```
+
+
+### Arguments
+
+#### [<code style={{ fontWeight: 'normal' }}>userWithDetails.<b>tenantName</b></code>](#)<Bullet />[`String!`](/scalars/string) <Badge class="secondary" text="non-null"/> <Badge class="secondary" text="scalar"/>
+> 
+> 
+
+#### [<code style={{ fontWeight: 'normal' }}>userWithDetails.<b>id</b></code>](#)<Bullet />[`UUID`](/scalars/uuid) <Badge class="secondary" text="scalar"/>
+> User UUID
+> 
+
+#### [<code style={{ fontWeight: 'normal' }}>userWithDetails.<b>name</b></code>](#)<Bullet />[`String`](/scalars/string) <Badge class="secondary" text="scalar"/>
+> User name
+> 
+
+#### [<code style={{ fontWeight: 'normal' }}>userWithDetails.<b>email</b></code>](#)<Bullet />[`String`](/scalars/string) <Badge class="secondary" text="scalar"/>
+> 
+> 
+
+### Type
+
+#### [`UserWithDetails`](/objects/user-with-details) <Badge class="secondary" text="object"/>
+> 
+> 
+
+
+
+
+

@@ -1,0 +1,45 @@
+---
+id: user-with-details
+title: UserWithDetails
+hide_table_of_contents: true
+pagination_next: null
+pagination_prev: null
+---
+
+
+
+export const Bullet = () => <><span style={{ fontWeight: 'normal', fontSize: '.5em', color: 'var(--ifm-color-secondary-darkest)' }}>&nbsp;●&nbsp;</span></>
+
+export const SpecifiedBy = (props) => <>Specification<a className="link" style={{ fontSize:'1.5em', paddingLeft:'4px' }} target="_blank" href={props.url} title={'Specified by ' + props.url}>⎘</a></>
+
+export const Badge = (props) => <><span class={'badge badge--' + props.class}>{props.text}</span></>
+
+
+No description
+
+```graphql
+type UserWithDetails {
+  user: User
+  userDetails: UserDetails
+}
+```
+
+
+### Fields
+
+#### [<code style={{ fontWeight: 'normal' }}>UserWithDetails.<b>user</b></code>](#)<Bullet />[`User`](/objects/user) <Badge class="secondary" text="object"/>
+> 
+> 
+
+#### [<code style={{ fontWeight: 'normal' }}>UserWithDetails.<b>userDetails</b></code>](#)<Bullet />[`UserDetails`](/objects/user-details) <Badge class="secondary" text="object"/>
+> 
+> 
+
+
+
+### Returned by
+
+[`userWithDetails`](/queries/user-with-details)  <Badge class="secondary" text="query"/>
+
+
+
