@@ -1,17 +1,17 @@
 {
-  "name": "graphql-markdown-demo",
-  "homepage": "https://graphql-markdown.github.io/graphql-markdown",
+  "name": "graphauth-docs",
+  "homepage": "https://graphauth.io",
   "version": "0.0.0",
   "private": true,
   "bugs": {
-    "url": "https://github.com/graphql-markdown/graphql-markdown/issues"
+    "url": "https://github.com/benwis/graphauth-docs/issues"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/graphql-markdown/graphql-markdown-demo.git"
+    "url": "https://github.com/benwis/graphauth-docs.git"
   },
   "author": {
-    "name": "Gregory Heitz"
+    "name": "Ben Wishovich"
   },
   "scripts": {
     "docusaurus": "docusaurus",
@@ -48,6 +48,6 @@
       "last 1 safari version"
     ]
   },
-  "description": "GraphQL Markdown demonstration",
+  "description": "Graphauth Docs page",
   "keywords": []
 }
