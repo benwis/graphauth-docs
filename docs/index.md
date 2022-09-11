@@ -1,7 +1,7 @@
 ---
 id: schema
 slug: /
-title: GraphQL Jobs API Documentation
+title: Graphauth Docs
 sidebar_position: 1
 hide_table_of_contents: true
 pagination_next: null
